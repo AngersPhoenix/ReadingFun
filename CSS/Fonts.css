@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+@font-face {
+    font-family: Dancing_Script;
+    src: url(../Fonts/Dancing_Script/DancingScript-Regular.ttf) ;
+}
+
+@font-face {
+    font-family: Marck_Script;
+    src: url(../Fonts/Marck_Script/MarckScript-Regular.ttf) ;
+}
+
+.dancing-script{
+	font-family:Dancing_Script, Arial, Helvetica, Sans-Serif;
+	font-size: x-large; 
+}
+
+.marck-script{
+	font-family: Dancing_Script, Arial, Helvetica, Sans-Serif;
+	font-size: medium;
+}
+

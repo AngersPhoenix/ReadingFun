@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<title>Confrim Registration</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../Frameworks/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../Frameworks/formvalidation-master/dist/css/formValidation.min.css">
+<link href="../CSS/Fonts.css" rel="stylesheet"></link>
+<style>
+.img-footer {
+	width: 30px;
+	height: 30px;
+}
+ body { 
+     background-color: #eee; 
+	 } 
+	 #center{ 
+	 	margin: auto; 
+	 	width: 30%; 
+	 }  
+</style>
+</head>
+<body data-twttr-rendered="true">
+<body data-twttr-rendered="true">
+	<header id="HRnavbar" class="navbar navbar-inverse navbar-static-top"
+		style="background-color: #373c40;margin-top:0px;" role="banner">
+		<div class="navbar-header">
+			<a class="navbar-brand"
+				href="index.php"><b><span
+					class="glyphicon glyphicon-home"></span> <span class="dancing-script">ReadingFun</span></b></a>
+			<!-- this section is used when we surf the website with a phone or a device smaller than our pc ! -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#menuportable">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+			</button>
+		</div>
+		<!-- end navbar-header-->
+
+		<div class="collapse navbar-collapse" id="menuportable">
+
+			<ul class="nav navbar-nav">
+				<li><a href="#feedback">Feedback</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#best">Best sells</a></li>
+			</ul>
+		</div>
+		<!-- end navbar-collapse-->
+	</header>
+
+	<div class="container" id="center">
+
+		<div id="message"></div>
+		<form id="confirmForm" action="" method="post">
+			<div class="form-signin">
+				<h2 class="form-signin-heading">
+					<b>Registration Form</b>
+				</h2>
+
+				<div class="form-group">
+					<input name="confirmEmail" id="confirmEmail" class="form-control"
+						type="email" autofocus="autofocus" required="required"
+						placeholder="Email address">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="password" required="required"
+						placeholder="Registration Code" name="confirmPassword"
+						id="confirmPassword">
+				</div>
+
+				<div class="checkbox">
+					<label> <input type="checkbox" id="login"> Keep
+						Login
+					</label>
+				</div>
+
+				<div class="form-group">
+					<button class="btn btn-lg btn-success btn-block" type="submit"
+						id="confirm">
+						Confirm Registration <span class=" glyphicon glyphicon-ok"></span>
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+
+
+
+<footer class="bs-docs-footer"
+	style="background-color: #373c40; margin-bottom: 0px; margin-top: 300px;">
+	<div class="container">
+		<section style="color: white;">
+			<div class="col-xs-6 col-md-4">
+				<h4>Contact us</h4>
+				<p class="footer-text">Get in touch here if you have any queries
+					or issues.</p>
+			</div>
+			<div class="col-xs-6 col-md-4">
+				<h4>Help & Support</h4>
+				<p class="footer-text">FAQs, order information, T&Cs, errata and
+					code downloads.</p>
+			</div>
+			<div class="col-xs-6 col-md-4" style="margin-bottom: 3%;">
+				<h4>Alerts & Offers</h4>
+				<p class="footer-text">Sign up to our emails for regular
+					updates, bespoke offers, exclusive discounts and great free
+					content.</p>
+				<form class="form-inline">
+					<div class="form-group">
+						<input style="color: black;" name=""
+							placeholder="enter your email adress" />
+						<button class="btn btn-primary ">
+							<b>Submit</b>
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+	<div class="container" style="color: white;">
+		<div class="col-sx-6 col-md-3">
+			<p class="footer-text">© Packt Publishing Limited. All Rights
+				Reserved</p>
+		</div>
+		<div class="col-sx-6 col-md-3">
+			<p class="footer-text">View our Cookie Policy</p>
+		</div>
+		<div class="col-sx-6 col-md-3">
+			<p class="footer-text">Our Privacy Policy</p>
+		</div>
+		<div class="col-sx-6 col-md-3">
+			<a href=""><img alt="" src="../images/youtube.png"
+				class="img-circle img-footer"></a> <a href=""><img alt=""
+				src="../images/facebook.png" class="img-circle img-footer"></a> <a
+				href=""><img alt="" src="../images/twitter.png"
+				class="img-circle img-footer"></a> <a href=""><img alt=""
+				src="../images/g+.png" class="img-circle img-footer"></a>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="../JS/jquery.min.js"></script>
+
+<!-- <script type="text/javascript" 	src="../../../bootstrap-3.3.2/js/tests/vendor/jquery.min.js"></script> -->
+<script	src="../Frameworks/formvalidation-master/dist/js/framework/bootstrap.min.js"></script>
+<!-- <script src="../../../formvalidation-master/vendor/bootstrap/js/bootstrap.min.js"></script> -->
+<!-- <script	src="../../Frameworks/formvalidation-master/dist/js/formValidation.min.js"></script> -->
+<script src="../Frameworks/formvalidation-master/dist/js/formValidation.min.js"></script>
+<!-- <script	src="../../Frameworks/formvalidation-master/dist/js/framework/bootstrap.min.js"></script> -->
+
+
+<script type="text/javascript">
+	$(document)
+			.ready(
+					function() {
+
+						//send a request to the control_registration page so we could know if the given user is really in our database or not !
+
+						$("#confirm")
+								.click(
+										function(e) {
+
+											//to prevent the default behavior which is the submit action !
+											e.preventDefault();
+
+											$
+													.post(
+															'../../Controller/control_registration.php',
+															{
+																action : "confirm",
+																email : $(
+																		'#confirmEmail')
+																		.val(),
+																password : $(
+																		'#confirmPassword')
+																		.val()
+															},
+															function(d) {
+																if (d["success"] == true) {
+
+																	document
+																			.getElementById('message').innerHTML = "<div class=\"alert alert-success\" role=\"alert\"><strong>Well done ! welcome with us</strong></div>";
+// 																	setTimeout(
+// 																			function() {
+// 																				if ($(
+// 																						'#login')
+// 																						.is(
+// 																								':checked')){
+// 																					var client=[];
+// 																					client["type"]="register";
+// 																					client["name"]=d.name;
+// 																					client["age"]=d.age;
+// 																					client["email"]=d.email;
+// 																					client["password"]=d.password;
+// 																					client["level"]=d.level;			
+// 																					myPost("index.php",client);
+// 																				}else 
+																					document.location.href="index.php"
+// 																			},
+// 																			3000);
+																} else
+																	document
+																			.getElementById('message').innerHTML = "<div class=\"alert alert-danger\" role=\"alert\"> <span class=\"glyphicon glyphicon-exclamation-sign\" aria-hidden=\"true\"></span> Oh snap! Change a few things up and try submitting again.</div>";
+															}, 'json')
+
+										});
+
+						//validation form :
+
+						$('#confirmForm')
+								.formValidation(
+										{
+											framework : 'bootstrap',
+											icon : {
+												valid : 'glyphicon glyphicon-ok',
+												invalid : 'glyphicon glyphicon-remove',
+												validating : 'glyphicon glyphicon-refresh'
+											},
+											message : 'This value is not valid',
+											fields : {
+												confirmEmail : {
+													validators : {
+														notEmpty : {
+															message : 'The Login is required and cannot be empty'
+														},
+														stringLength : {
+															min : 3,
+															max : 30,
+															message : 'The username must be more than 3 and less than 30 characters long'
+														}
+													}
+												},
+												confirmPassword : {
+													validators : {
+														notEmpty : {
+															message : 'The Password is brutal and cannot be empty'
+														}
+													}
+
+												}
+											}
+										});
+
+					});
+	
+	
+	function myPost(path, params, method) {
+	    method = method || "post"; // Set method to post by default if not specified.
+
+	    // The rest of this code assumes you are not using a library.
+	    // It can be made less wordy if you use one.
+	    var form = document.createElement("form");
+	    form.setAttribute("method", method);
+	    form.setAttribute("action", path);
+
+	    for(var key in params) {
+	        if(params.hasOwnProperty(key)) {
+	            var hiddenField = document.createElement("input");
+	            hiddenField.setAttribute("type", "hidden");
+	            hiddenField.setAttribute("name", key);
+	            hiddenField.setAttribute("value", params[key]);
+
+	            form.appendChild(hiddenField);
+	         }
+	    }
+
+	    document.body.appendChild(form);
+	    form.submit();
+	}
+	
+	
+	
+</script>
+
+
+</html>

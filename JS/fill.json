@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "ClientName": "Tiger",
+      "ClientAge": "23",
+      "ClientEmail": "t.nixon@datatables.net",
+      "ClientPassword": "215646",
+      "ClientLevel": "User"
+    },
+    {
+      "ClientName": "Tiger",
+      "ClientAge": "23",
+      "ClientEmail": "t.nixon@datatables.net",
+      "ClientPassword": "215646",
+      "ClientLevel": "User"
+    },
+    {
+      "ClientName": "Tiger",
+      "ClientAge": "23",
+      "ClientEmail": "t.nixon@datatables.net",
+      "ClientPassword": "215646",
+      "ClientLevel": "User"
+    },
+    {
+      "ClientName": "Tiger",
+      "ClientAge": "23",
+      "ClientEmail": "t.nixon@datatables.net",
+      "ClientPassword": "215646",
+      "ClientLevel": "User"
+    }
+    ]
+}

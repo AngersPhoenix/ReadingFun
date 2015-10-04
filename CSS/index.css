@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+
+#jumbotron-container {
+	background-image: url("../images/jumbotron-background3.jpg");
+}
+
+.footer-text {
+	font-style: italic;
+	color: gray;
+}
+
+.img-footer {
+	width: 30px;
+	height: 30px;
+}
+
+#loginForm .form-control-feedback {
+	pointer-events: auto;
+}
+
+#registerForm .form-control-feedback:hover {
+	cursor: pointer;
+}
+
+#loading {
+	display: none;
+	margin-left: 44%;
+}

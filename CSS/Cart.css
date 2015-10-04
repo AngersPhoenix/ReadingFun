@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+
+
+.footer-text {
+	font-style: italic;
+	color: gray;
+}
+
+.img-footer {
+	width: 30px;
+	height: 30px;
+}
+
+.like-link{
+cursor: pointer;
+}
+
+#loading {
+	display: none;
+	margin-left: 44%;
+}
+
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="ReadingFun" basedir="." default="deploy">
+	
+	<property name="database.src" value="Persistance" />
+	<property name="database.name" value="dev_database" />
+	<property name="database.file" value="${database.src}/${database.name}.sql" />
+	<property name="version" value="2.1" />
+	<property name="src.dir" value="." />
+
+	<target name="dump_database">
+	<echo message="dump database to file ${database.file}" />
+	<exec executable="mysqldump" output="${database.file}">
+			<arg value="-u" />
+			<arg value="root" />
+			<arg value="-p" />
+			<arg value="${database.name}" />
+		</exec>
+	</target>
+	
+	<target name="fill_database">
+	<echo message="fill database from ${database.file}" />
+	<exec executable="mysql" input="${database.file}">
+			<arg value="-u" />
+			<arg value="root" />
+			<arg value="-p" />
+			<arg value="${database.name}" />
+		</exec>
+	</target>
+
+</project>
+

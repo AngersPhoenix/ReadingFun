@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<title>Confrim Registration</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../bootstrap-3.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="../../../formvalidation-master/dist/css/formValidation.min.css">
+<link href="../../CSS/login_css.css" rel="stylesheet">
+		
+<style>
+.img-footer {
+	width: 30px;
+	height: 30px;
+}
+		</style>		
+</head>
+";
+<body data-twttr-rendered="true">
+
+<body data-twttr-rendered="true">
+	  <header id="HRnavbar" class="navbar navbar-inverse navbar-static-top"
+		style="background-color: #373c40;" role="banner">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#"><b><span
+					class="glyphicon glyphicon-home"></span> ReadingFun</b></a>
+			<!-- this section is used when we surf the website with a phone or a device smaller than our pc ! -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#menuportable">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+			</button>
+		</div>
+		<!-- end navbar-header-->
+
+		<div class="collapse navbar-collapse" id="menuportable">
+
+			<ul class="nav navbar-nav">
+				<li><a href="#feedback">Feedback</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#best">Best sells</a></li>
+			</ul>
+		</div>
+		<!-- end navbar-collapse-->
+	</header>
+
+<div class="container" id="center">
+<form id="passwordBootstrapForm" action="" method="post">
+<div class="form-signin">
+<h2 class="form-signin-heading"><b>Registration Form</b></h2>
+
+<div class="form-group">
+<label class="sr-only">Email address</label> <input
+name="inputEmail" class="form-control" type="email" autofocus=""
+		required="" placeholder="Email address">
+		</div>
+
+		<div class="form-group">
+		<label class="sr-only" for="inputPassword">Password</label> <input
+		class="form-control" type="password" required=""
+				placeholder="Registration Code" name="psswd">
+				</div>
+
+				<div class="form-group">
+				<button class="btn btn-lg btn-success btn-block" type="submit"
+						id="loh">Confirm Registration <span class=" glyphicon glyphicon-ok"></span></button>
+						</div>
+						</div>
+						</form>
+						</div>
+</body>;
+
+
+
+		<footer class="bs-docs-footer" style="background-color: #373c40;margin-bottom:0px;margin-top:300px;">
+// 	<div class="container">
+		<section style="color: white;">
+			<div class="col-xs-6 col-md-4">
+				<h4>Contact us</h4>
+				<p class="footer-text">Get in touch here if you have any queries
+					or issues.</p>
+			</div>
+			<div class="col-xs-6 col-md-4">
+				<h4>Help & Support</h4>
+				<p class="footer-text">FAQs, order information, T&Cs, errata and
+					code downloads.</p>
+			</div>
+			<div class="col-xs-6 col-md-4" style="margin-bottom: 3%;">
+				<h4>Alerts & Offers</h4>
+				<p class="footer-text">Sign up to our emails for regular
+					updates, bespoke offers, exclusive discounts and great free
+					content.</p>
+				<form class="form-inline">
+					<div class="form-group">
+						<input style="color: black;" name=""
+							placeholder="enter your email adress" />
+						<button class="btn btn-primary ">
+							<b>Submit</b>
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+ 	</div>
+ 	<div class="container" style="color: white;">
+		<div class="col-sx-6 col-md-3">
+			<p class="footer-text">© Packt Publishing Limited. All Rights
+				Reserved</p>
+		</div>
+		<div class="col-sx-6 col-md-3">
+			<p class="footer-text">View our Cookie Policy</p>
+		</div>
+		<div class="col-sx-6 col-md-3">
+			<p class="footer-text">Our Privacy Policy</p>
+		</div>
+		<div class="col-sx-6 col-md-3">
+			<a href=""><img alt="" src="../../img/youtube.png"
+				class="img-circle img-footer"></a> <a href=""><img alt=""
+				src="../../img/facebook.png" class="img-circle img-footer"></a> <a
+				href=""><img alt="" src="../../img/twitter.png"
+				class="img-circle img-footer"></a> <a href=""><img alt=""
+				src="../../img/g+.png" class="img-circle img-footer"></a>
+		</div>
+ 	</div>
+</footer>
+</html>;

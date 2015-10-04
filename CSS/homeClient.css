@@ -1,0 +1,57 @@
+.back-to-top, .bs-docs-theme-toggle {
+	display: block;
+}
+
+.back-to-top {
+	/*     display: none; */
+	padding: 4px 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #999;
+}
+
+.view {
+	color: gray;
+}
+
+.simple {
+	text-decoration: none
+}
+
+.preview {
+	width: 15%;
+	height: 15%;
+}
+
+table {
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+
+.img-responsive {
+	width: 100%;
+}
+
+.footer-text {
+	font-style: italic;
+	color: gray;
+}
+
+.img-footer {
+	width: 30px;
+	height: 30px;
+}
+
+#loginForm .form-control-feedback {
+	pointer-events: auto;
+}
+
+#registerForm .form-control-feedback:hover {
+	cursor: pointer;
+}
+
+.like-link{
+cursor: pointer;
+}
